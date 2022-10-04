@@ -2,7 +2,7 @@ def alphabet_position(string)
   result = ""
   string = string.downcase.split("")
   string.each { |c|
-    if c.match?(/[[:alpha:]]/) # check letter it's pr not
+    if c.match?(/[[:alpha:]]/) # check letter it's or not
       position = c.ord - 96
       result += position.to_s + " "
     end
